@@ -1,9 +1,2 @@
-Artist						
-id	name	style	teamMembers	totalSongs	totalAlbums	payment
-1	José da Silva	Samba	4	12	1	40 000
-2	Maria	Pagode	6	8	2	60 000
-						
-Composer						
-id	name	teamMember	totalSongs	totalAlbums	payment	
-1	Melo compositor	6	4	1	50 000
-2	Barbosa compositor	11	3	2	68 000
+41gs65df4g6 José Samba 4 12 1 40.000
+gh56df46gh54 Maria Pagode 6 8 2 60.000

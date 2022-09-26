@@ -1,3 +1,4 @@
+package br.unifor.atividade;
 
 public class Artist extends Producer {
     String id;

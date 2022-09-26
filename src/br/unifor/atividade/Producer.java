@@ -1,3 +1,5 @@
+package br.unifor.atividade;
+
 abstract class Producer {
     int teamMembers;
     int totalSongs;

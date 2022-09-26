@@ -1,3 +1,5 @@
+package br.unifor.atividade;
+
 import java.util.Date;
 
 public class Song extends Release {

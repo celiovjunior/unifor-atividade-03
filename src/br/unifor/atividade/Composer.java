@@ -1,3 +1,5 @@
+package br.unifor.atividade;
+
 public class Composer extends Producer {
     String id;
     String name;

@@ -1,3 +1,5 @@
+package br.unifor.atividade;
+
 public class ComposerPaycheck implements IPaycheck {
     @Override
     public double tax(double albumTotalSells) {
