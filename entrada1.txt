@@ -1,2 +1,2 @@
-1 Jose Samba 4 12 1 40000
-2 Smith Rock 8 16 1 67000
+1 Jose 4 2
+2 Smith 8 2

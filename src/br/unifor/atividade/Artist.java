@@ -5,12 +5,10 @@ public class Artist extends Producer {
     String name;
 
 
-    public Artist(String id,int totalSongs, int totalAlbums, String name, double payment) {
-        super(totalSongs, totalAlbums, payment);
+    public Artist(String id,int totalSongs, int totalAlbums, String name) {
+        super(totalSongs, totalAlbums);
         this.id = id;
         this.name = name;
-
-        this.payment = payment;
     }
 
     public String getName() {

@@ -3,12 +3,10 @@ package br.unifor.atividade;
 abstract class Producer {
     int totalSongs;
     int totalAlbums;
-    double payment;
 
-    public Producer(int totalSongs, int totalAlbums, double payment) {
+    public Producer(int totalSongs, int totalAlbums) {
         this.totalSongs = totalSongs;
         this.totalAlbums = totalAlbums;
-        this.payment = payment;
     }
 
 
@@ -28,11 +26,4 @@ abstract class Producer {
         this.totalAlbums = totalAlbums;
     }
 
-    public double getPayment() {
-        return payment;
-    }
-
-    public void setPayment(double payment) {
-        this.payment = payment;
-    }
 }

@@ -7,31 +7,29 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Artist> allArtists = new ArrayList<>();
+
         String filePath = "entrada1.txt";
 
         File file = new File(filePath);
 
-        ArrayList<Producer> producers = new ArrayList<Producer>();
-
         try {
             Scanner scanner = new Scanner(file);
-            while(scanner.hasNextLine()) {
-                String[] result = scanner.nextLine().split(" ");
-                if (result[7].equals("artist")) {
-                    Artist artist = new Artist(
-                        result[0],
-                        Integer.parseInt(result[3]),
-                        Integer.parseInt(result[4]),
-                        Integer.parseInt(result[5]),
-                        result[1], result[2], Double.parseDouble(result[6])
-                    );
-                    producers.add(artist);
-                }
+            while(scanner.hasNext()){
+                String id = scanner.next();
+                String name = scanner.next();
+                int totalSongs = scanner.nextInt();
+                int totalAlbums = scanner.nextInt();
+
+                Artist artist = new Artist(id, totalSongs, totalAlbums, name);
+                allArtists.add(artist);
             }
-            Artist artist = (Artist) producers.get(0);
-            System.out.println(artist.getName());
         } catch(FileNotFoundException e) {
             e.printStackTrace();
+        }
+
+        for(int i = 0; i < allArtists.size(); i++) {
+            System.out.println(allArtists.get(i));
         }
 
     }
