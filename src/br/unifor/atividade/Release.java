@@ -3,13 +3,10 @@ package br.unifor.atividade;
 import java.util.Date;
 
 abstract class Release {
-
     double sells;
-    Date releaseDate = new Date();
 
-    public Release(double sells, Date releaseDate) {
+    public Release(double sells) {
         this.sells = sells;
-        this.releaseDate = releaseDate;
     }
 
     public double getSells() {
@@ -20,11 +17,4 @@ abstract class Release {
         this.sells = sells;
     }
 
-    public Date getReleaseDate() {
-        return releaseDate;
-    }
-
-    public void setReleaseDate(Date releaseDate) {
-        this.releaseDate = releaseDate;
-    }
 }

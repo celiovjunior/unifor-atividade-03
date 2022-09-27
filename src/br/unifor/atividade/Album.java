@@ -1,20 +1,25 @@
 package br.unifor.atividade;
+
 import java.util.Date;
 
 public class Album extends Release {
     String id;
     String name;
-    double totalDuration;
-    Composer composer;
-    Artist artist;
+    int songAmount;
 
-    public Album(String id, double songDurationMinutes, Date releaseDate, String name, double totalDuration, Composer composer, Artist artist) {
-        super(songDurationMinutes, releaseDate);
+    public Album(double sells, String id, String name, int songAmount) {
+        super(sells);
         this.id = id;
         this.name = name;
-        this.totalDuration = totalDuration;
-        this.composer = composer;
-        this.artist = artist;
+        this.songAmount = songAmount;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -25,35 +30,21 @@ public class Album extends Release {
         this.name = name;
     }
 
-    public double getTotalDuration() {
-        return totalDuration;
+    public int getSongAmount() {
+        return songAmount;
     }
 
-    public void setTotalDuration(double totalDuration) {
-        this.totalDuration = totalDuration;
+    public void setSongAmount(int songAmount) {
+        this.songAmount = songAmount;
     }
 
-    public Composer getComposer (Composer composer) {
-        return composer;
-    }
-
-    public void setComposers(Composer composer) {
-        this.composer = composer;
-    }
-
-    public Artist getArtist() {
-        return artist;
-    }
-
-    public void setArtist(Artist artist) {
-        this.artist = artist;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+    @Override
+    public String toString() {
+        return "Album{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", songAmount=" + songAmount +
+                ", sells=" + sells +
+                '}';
     }
 }

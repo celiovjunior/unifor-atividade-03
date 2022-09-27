@@ -19,12 +19,29 @@ public class Artist extends Producer {
         this.name = name;
     }
 
-
     public String getId() {
         return id;
     }
 
     public void setId(String id) {
         this.id = id;
+    }
+
+//    public void showData() {
+//        System.out.println("Id: " + id +
+//                "\n" + "totalSongs: " + totalSongs +
+//                "\n" + "totalAlbums: " + totalSongs +
+//                "\n" + "Name: " + name);
+//    }
+
+
+    @Override
+    public String toString() {
+        return "Artist{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", totalSongs=" + totalSongs +
+                ", totalAlbums=" + totalAlbums +
+                '}';
     }
 }

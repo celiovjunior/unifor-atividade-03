@@ -1,0 +1,4 @@
+Artist ID: 2
+Name: Smith
+Total songs: 8
+Total albums: 2
