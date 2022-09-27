@@ -1,4 +1,5 @@
 Song ID: 2
 Name: Natal
-Sells: US$850000.0
-Has Videoclip? true
+Sells: US$ 850000.0
+Has Videoclip: true
+Taxes: US$ 12750.0

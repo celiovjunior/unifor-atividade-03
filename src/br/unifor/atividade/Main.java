@@ -86,6 +86,9 @@ public class Main {
             if (allArtists.get(i).totalSongs > allArtists.get(position).getTotalSongs()) {
                 position = i;
             }
+
+            ArtistPaycheck artistPaycheck = new ArtistPaycheck();
+            allArtists.get(position).payment = artistPaycheck.payment(250000);
         }
 
         String outputPath = "resultado1.txt";
@@ -97,6 +100,7 @@ public class Main {
             fw.write("Name: " + allArtists.get(position).getName() + "\n");
             fw.write("Total songs: " + allArtists.get(position).getTotalSongs() + "\n");
             fw.write("Total albums: " + allArtists.get(position).getTotalAlbums() + "\n");
+            fw.write("Payment: " + allArtists.get(position).getPayment() + "\n" );
             fw.close();
         } catch (IOException e) {
             System.out.println(e);
@@ -108,6 +112,9 @@ public class Main {
             if(allSongs.get(i).sells > allSongs.get(position).getSells()) {
                 position = i;
             }
+
+            SongTaxes songTaxes = new SongTaxes();
+            allSongs.get(position).taxes = songTaxes.tax(allSongs.get(position).sells);
         }
 
         String outputPath2 = "resultado2.txt";
@@ -118,8 +125,9 @@ public class Main {
             FileWriter fw2 = new FileWriter(outputFile2);
             fw2.write("Song ID: " + allSongs.get(position).getId() + "\n");
             fw2.write("Name: " + allSongs.get(position).getName() + "\n");
-            fw2.write("Sells: US$" + allSongs.get(position).getSells() + "\n");
-            fw2.write("Has Videoclip? " + allSongs.get(position).getHasVideoclip() + "\n");
+            fw2.write("Sells: US$ " + allSongs.get(position).getSells() + "\n");
+            fw2.write("Has Videoclip: " + allSongs.get(position).getHasVideoclip() + "\n");
+            fw2.write("Taxes: US$ " + allSongs.get(position).getTaxes() + "\n");
             fw2.close();
         } catch (IOException e) {
             System.out.println(e);

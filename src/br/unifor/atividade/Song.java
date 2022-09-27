@@ -1,6 +1,8 @@
 package br.unifor.atividade;
 
 public class Song extends Release {
+    public double taxes;
+
     String id;
     String name;
     Boolean hasVideoclip;
@@ -36,10 +38,19 @@ public class Song extends Release {
         this.id = id;
     }
 
+    public double getTaxes() {
+        return taxes;
+    }
+
+    public void setTaxes(double taxes) {
+        this.taxes = taxes;
+    }
+
     @Override
     public String toString() {
         return "Song{" +
-                "id='" + id + '\'' +
+                "taxes=" + taxes +
+                ", id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", hasVideoclip=" + hasVideoclip +
                 ", sells=" + sells +

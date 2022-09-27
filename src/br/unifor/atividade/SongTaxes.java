@@ -1,6 +1,6 @@
 package br.unifor.atividade;
 
-public class ComposerPaycheck implements IPaycheck {
+public class SongTaxes implements IPaycheck {
     @Override
     public double tax(double albumTotalSells) {
         double taxAmount = albumTotalSells * 0.015;
