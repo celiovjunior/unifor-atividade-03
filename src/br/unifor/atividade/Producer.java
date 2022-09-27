@@ -1,25 +1,16 @@
 package br.unifor.atividade;
 
 abstract class Producer {
-    int teamMembers;
     int totalSongs;
     int totalAlbums;
     double payment;
 
-    public Producer(int teamMembers, int totalSongs, int totalAlbums, double payment) {
-        this.teamMembers = teamMembers;
+    public Producer(int totalSongs, int totalAlbums, double payment) {
         this.totalSongs = totalSongs;
         this.totalAlbums = totalAlbums;
         this.payment = payment;
     }
 
-    public int getTeamMembers() {
-        return teamMembers;
-    }
-
-    public void setTeamMembers(int teamMembers) {
-        this.teamMembers = teamMembers;
-    }
 
     public int getTotalSongs() {
         return totalSongs;

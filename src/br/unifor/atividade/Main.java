@@ -19,11 +19,11 @@ public class Main {
                 String[] result = scanner.nextLine().split(" ");
                 if (result[7].equals("artist")) {
                     Artist artist = new Artist(
-                            result[0],
-                            Integer.parseInt(result[3]),
-                            Integer.parseInt(result[4]),
-                            Integer.parseInt(result[5]),
-                            result[1], result[2], Double.parseDouble(result[6])
+                        result[0],
+                        Integer.parseInt(result[3]),
+                        Integer.parseInt(result[4]),
+                        Integer.parseInt(result[5]),
+                        result[1], result[2], Double.parseDouble(result[6])
                     );
                     producers.add(artist);
                 }

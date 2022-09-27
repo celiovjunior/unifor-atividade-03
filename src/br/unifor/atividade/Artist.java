@@ -3,13 +3,13 @@ package br.unifor.atividade;
 public class Artist extends Producer {
     String id;
     String name;
-    String style;
 
-    public Artist(String id, int teamMembers, int totalSongs, int totalAlbums, String name, String style, double payment) {
-        super(teamMembers, totalSongs, totalAlbums, payment);
+
+    public Artist(String id,int totalSongs, int totalAlbums, String name, double payment) {
+        super(totalSongs, totalAlbums, payment);
         this.id = id;
         this.name = name;
-        this.style = style;
+
         this.payment = payment;
     }
 
@@ -21,13 +21,6 @@ public class Artist extends Producer {
         this.name = name;
     }
 
-    public String getStyle() {
-        return style;
-    }
-
-    public void setStyle(String style) {
-        this.style = style;
-    }
 
     public String getId() {
         return id;

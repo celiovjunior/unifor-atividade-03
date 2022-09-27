@@ -5,13 +5,11 @@ import java.util.Date;
 public class Song extends Release {
     String id;
     String name;
-    double duration;
     Boolean hasVideoclip;
 
-    public Song(String id, double songDurationMinutes, Date releaseDate, String name, double duration, Boolean hasVideoclip) {
-        super(songDurationMinutes, releaseDate);
+    public Song(String id, Date releaseDate, String name, double sells, Boolean hasVideoclip) {
+        super(sells, releaseDate);
         this.name = name;
-        this.duration = duration;
         this.hasVideoclip = hasVideoclip;
         this.id = id;
     }
@@ -22,14 +20,6 @@ public class Song extends Release {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public double getDuration() {
-        return duration;
-    }
-
-    public void setDuration(double duration) {
-        this.duration = duration;
     }
 
     public Boolean getHasVideoclip() {

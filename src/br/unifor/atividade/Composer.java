@@ -4,8 +4,8 @@ public class Composer extends Producer {
     String id;
     String name;
 
-    public Composer(String id, int teamMembers, int totalSongs, int totalAlbums, String name, double payment) {
-        super(teamMembers, totalSongs, totalAlbums, payment);
+    public Composer(String id, int totalSongs, int totalAlbums, String name, double payment) {
+        super(totalSongs, totalAlbums, payment);
         this.name = name;
         this.id = id;
     }

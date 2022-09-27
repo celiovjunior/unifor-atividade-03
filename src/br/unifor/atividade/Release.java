@@ -7,17 +7,17 @@ abstract class Release {
     double sells;
     Date releaseDate = new Date();
 
-    public Release(double songDurationMinutes, Date releaseDate) {
-        this.sells = songDurationMinutes;
+    public Release(double sells, Date releaseDate) {
+        this.sells = sells;
         this.releaseDate = releaseDate;
     }
 
-    public double getSongDurationMinutes() {
+    public double getSells() {
         return sells;
     }
 
-    public void setSongDurationMinutes(double songDurationMinutes) {
-        this.sells = songDurationMinutes;
+    public void setSells(double sells) {
+        this.sells = sells;
     }
 
     public Date getReleaseDate() {
